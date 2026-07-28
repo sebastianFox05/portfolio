@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">Workspace visual de Fox Developer</title>
+  <desc id="desc">Composicion con pantallas de codigo, tablero de producto y tarjetas de portfolio.</desc>
+  <rect width="900" height="620" rx="36" fill="#f4f7f6"/>
+  <rect x="78" y="82" width="756" height="440" rx="28" fill="#10221f"/>
+  <rect x="116" y="122" width="340" height="294" rx="18" fill="#eaf2ef"/>
+  <rect x="492" y="122" width="240" height="64" rx="16" fill="#f7c95f"/>
+  <rect x="492" y="212" width="188" height="28" rx="14" fill="#eaf2ef"/>
+  <rect x="492" y="266" width="260" height="28" rx="14" fill="#91d6c1"/>
+  <rect x="492" y="320" width="214" height="28" rx="14" fill="#dfe7e4"/>
+  <rect x="142" y="154" width="72" height="18" rx="9" fill="#1c3b36"/>
+  <rect x="142" y="196" width="240" height="14" rx="7" fill="#5bb79f"/>
+  <rect x="142" y="232" width="200" height="14" rx="7" fill="#264d46"/>
+  <rect x="142" y="268" width="260" height="14" rx="7" fill="#264d46"/>
+  <rect x="142" y="326" width="118" height="42" rx="21" fill="#f7c95f"/>
+  <circle cx="704" cy="438" r="86" fill="#eaf2ef"/>
+  <path d="M658 442h92M704 396v92" stroke="#10221f" stroke-width="18" stroke-linecap="round"/>
+  <rect x="184" y="464" width="532" height="20" rx="10" fill="#0a1513"/>
+</svg>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Portafolio frontend de FOX Developer con diseño UI, microinteracciones y experiencias web.">
+    <meta property="og:title" content="FOX DEVELOPER">
+    <meta property="og:description" content="Desarrollador frontend y diseñador UI.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/foxDev.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>FOX DEVELOPER | Home</title>
+    <link rel="icon" type="image/jpg" href="assets/img/foxDev.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="app" id="top">
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <header class="topbar">
+            <div class="nav-pill">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo" class="logo-img dark-logo">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo Light" class="logo-img light-logo">
+                    </a>
+                    
+                </div>
+                <nav class="nav">
+                    <a class="nav-link is-active" href="index.html" data-section="home">Home</a>
+                    <a class="nav-link" href="about.html" data-section="about">About</a>
+                    <a class="nav-link" href="projects.html" data-section="projects">Projects</a>
+                    <a class="nav-link" href="services.html" data-section="services">Services</a>
+                    <a class="nav-link" href="collabs.html" data-section="collaboration">Collabs</a>
+                    <a class="nav-link" href="contact.html" data-section="contact">Contact</a>
+                    <span class="nav-underline" aria-hidden="true"></span>
+                </nav>
+                <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema" title="Cambiar tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <main class="hero" id="home">
+            <div class="hero-content">
+                <div class="kicker">THE FUTURE OF DEVELOPMENT IS HERE</div>
+                <h1 class="headline">
+                    <span class="headline word1">FOX</span>
+                    <span class="headline word2">DEVELOPER</span>
+                </h1>
+                <div class="subline">FRONTEND DEVELOPER &amp; UI DESIGNER</div>
+                <div class="cta-row">
+                    <a class="btn btn-primary" href="projects.html" id="viewProjectsBtn">View Projects</a>
+                    <a class="btn btn-ghost" href="assets/CV.pdf" id="downloadResumeBtn" download>Download Resume</a>
+                </div>
+            </div>
+            <nav class="bottom-left SocialLinks SocialLinks--compact" aria-label="Social links">
+                <a class="icon-btn SocialLinks-item" href="https://www.instagram.com/foxdeveloper_?igsh=M21qdjg2MnJ4czg1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a class="icon-btn SocialLinks-item" href="https://www.linkedin.com/in/sebastian-fox-644816232" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                <a class="icon-btn SocialLinks-item" href="https://github.com/sebastianFox05" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a class="icon-btn SocialLinks-item" href="mailto:Sebasfox0510@gmail.com" aria-label="Correo" title="Correo"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+            </nav>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-text">SCROLL</div>
+                <div class="scroll-line"></div>
+            </div>
+        </main>
+
+        <section class="metrics-strip" data-reveal>
+            <article class="metric-card"><span class="metric-value" data-count="12">0</span><p>interfaces diseñadas y maquetadas</p></article>
+            <article class="metric-card"><span class="metric-value" data-count="6">0</span><p>tipos de entregables frontend</p></article>
+            <article class="metric-card"><span class="metric-value" data-count="100">0</span><p>porcentaje responsive-first</p></article>
+        </section>
+
+        <section class="portfolio-panel" data-reveal>
+            <div class="panel-head">
+                <div><div class="panel-kicker">CURRENT FOCUS</div><h2 class="panel-title">Que estoy construyendo ahora</h2></div>
+                <button class="panel-btn" type="button" id="focusNext">Next focus</button>
+            </div>
+            <div class="focus-board" id="focusBoard">
+                <div class="focus-orb"><span id="focusNumber">01</span></div>
+                <div>
+                    <h3 id="focusTitle">Portfolio systems</h3>
+                    <p id="focusText">Estructuras multipagina con identidad visual, proyectos, servicios y contacto claro.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-grid" data-reveal>
+            <article class="info-card"><span>Identity</span><h2>Presencia visual</h2><p>El home presenta la marca FOX Developer con una entrada fuerte, fondo fotografico, logotipo, contraste oscuro y una jerarquia pensada para verse premium sin sentirse cargada.</p></article>
+            <article class="info-card"><span>Motion</span><h2>Interacciones vivas</h2><p>Botones con ripple, reveal al hacer scroll, cambio de tema, indicadores activos y feedback visual para que la pagina no se sienta estatica.</p></article>
+            <article class="info-card"><span>Structure</span><h2>Rutas claras</h2><p>La experiencia ahora esta separada por paginas: About, Projects, Services, Collabs y Contact. Cada ruta tiene informacion propia y conserva la misma identidad.</p></article>
+            <article class="info-card"><span>Contact</span><h2>Conversion directa</h2><p>Los llamados a la accion conectan con proyectos, CV, formulario y WhatsApp para que un visitante pueda pasar de mirar el portfolio a iniciar una conversacion.</p></article>
+        </section>
+
+        <section class="portfolio-panel" data-reveal>
+            <div class="panel-head">
+                <div><div class="panel-kicker">PORTFOLIO MAP</div><h2 class="panel-title">Que cuenta cada pagina</h2></div>
+            </div>
+            <div class="faq-list">
+                <button class="faq-item active" type="button"><span>Home</span><p>Resume la identidad principal, muestra metricas, enfoque actual, perfil rapido y accesos directos a los puntos importantes del portfolio.</p></button>
+                <button class="faq-item" type="button"><span>Projects</span><p>Presenta el carrusel visual, filtros por tipo de proyecto y una lectura mas clara de como se piensa cada caso desde UX, codigo y salida a produccion.</p></button>
+                <button class="faq-item" type="button"><span>Services</span><p>Explica lo que se puede contratar, incluye un estimador interactivo y divide los servicios en paquetes para aterrizar el alcance.</p></button>
+                <button class="faq-item" type="button"><span>Collabs y Contact</span><p>Ordena las formas de colaborar, muestra demos interactivas y facilita enviar un mensaje con contexto suficiente para arrancar.</p></button>
+            </div>
+        </section>
+
+        <section class="portfolio-panel" data-reveal>
+            <div class="panel-head">
+                <div><div class="panel-kicker">QUALITY CHECK</div><h2 class="panel-title">Que reviso antes de entregar</h2></div>
+            </div>
+            <div class="info-grid">
+                <article class="info-card"><span>01</span><h2>Contenido</h2><p>Que el mensaje principal sea claro, que cada seccion tenga una razon y que los llamados a la accion no compitan entre si.</p></article>
+                <article class="info-card"><span>02</span><h2>Responsive</h2><p>Que la interfaz respire en escritorio, tablet y movil; sin textos cortados, tarjetas deformadas o navegacion incomoda.</p></article>
+                <article class="info-card"><span>03</span><h2>Accesibilidad</h2><p>Que botones, enlaces, labels, contraste y foco sean utilizables, especialmente en formularios, navegacion y modales.</p></article>
+                <article class="info-card"><span>04</span><h2>Performance</h2><p>Que los assets esten controlados, el JavaScript sea ligero y la pagina cargue rapido sin depender de efectos innecesarios.</p></article>
+            </div>
+        </section>
+
+        <section class="about-section" id="about" data-reveal>
+            <div class="about-wrapper">
+                <div class="about-image" id="aboutTilt" data-reveal>
+                    <img src="assets/img/foxDev.jpeg" alt="Profile">
+                    <div class="about-glow" aria-hidden="true"></div>
+                </div>
+                <div class="about-content" data-reveal>
+                    <div class="about-kicker">
+                        WHO AM I?
+                        <span class="about-progress" aria-hidden="true"></span>
+                    </div>
+                    <h2 class="about-title" data-type="I am Dynamic and Creative">I am Dynamic and Creative</h2>
+                    <p>Soy Sebastian Fox, frontend developer enfocado en interfaces visuales, micro-interacciones y experiencias web que se sienten pulidas desde el primer click.</p>
+                    <p>Trabajo con HTML, CSS, JavaScript y criterios de UI para convertir ideas, marcas y productos en sitios rapidos, responsive y faciles de mantener.</p>
+                    <div class="about-data">
+                        <button class="data-chip" type="button" data-copy="Sebastian Fox" aria-label="Copy Name"><strong>Name:</strong> Sebastian Fox <span class="chip-ico">copy</span></button>
+                        <button class="data-chip" type="button" data-copy="Centro, Edif.Concasa-Oficina 1401" aria-label="Copy Address"><strong>Address:</strong> Centro, Edif.Concasa-Oficina 1401 <span class="chip-ico">copy</span></button>
+                        <button class="data-chip" type="button" data-copy="Sebasfox0510@gmail.com" aria-label="Copy Email"><strong>Email:</strong> Sebasfox0510@gmail.com <span class="chip-ico">copy</span></button>
+                        <button class="data-chip" type="button" data-copy="+57 3005999843" aria-label="Copy Phone"><strong>Phone:</strong> +57 3005999843 <span class="chip-ico">copy</span></button>
+                    </div>
+                    <div class="about-buttons">
+                        <a class="btn btn-primary" href="assets/CV.pdf" id="downloadCvBtn">DOWNLOAD CV</a>
+                        <a class="btn btn-ghost" href="contact.html" id="hireMeBtn">HIRE ME</a>
+                    </div>
+                </div>
+            </div>
+            <div class="about-brands" data-reveal>
+                <button class="brand" type="button" data-brand="FOX ABOGADOS&CONSULTORES">FOX <br>ABOGADOS&CONSULTORES</button>
+                <button class="brand" type="button" data-brand="JF CONNECTIONS">JF CONNECTIONS</button>
+                <button class="brand" type="button" data-brand="ARUS">ARUS</button>
+                <button class="brand" type="button" data-brand="HOTEL CASA BALUARTE">HOTEL CASA BALUARTE</button>
+            </div>
+        </section>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+
+    <a href="https://wa.me/573005999843?text=Hola%20FoxDev%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp" title="WhatsApp" id="waFloat">
+        <span class="wa-ping" aria-hidden="true"></span>
+        <span class="wa-tooltip" role="tooltip">Escribenos en WhatsApp</span>
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <footer class="ft" id="footer">
+        <div class="ft-wrap">
+            <div class="ft-top">
+                <div class="ft-brand">
+                    <div class="ft-logo ft-logo-foxdev">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo" draggable="false">
+                    </div>
+                    <p class="ft-desc">Frontend developer focused on clean UI, micro-interactions, and performant web experiences.</p>
+                    <div class="ft-social SocialLinks" aria-label="Social links">
+                        <a class="ft-ic SocialLinks-item" href="https://www.instagram.com/foxdeveloper_?igsh=M21qdjg2MnJ4czg1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a class="ft-ic SocialLinks-item" href="https://www.linkedin.com/in/sebastian-fox-644816232" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a class="ft-ic SocialLinks-item" href="https://github.com/sebastianFox05" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        <a class="ft-ic SocialLinks-item" href="mailto:Sebasfox0510@gmail.com" aria-label="Correo" title="Correo"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="ft-col">
+                    <h4 class="ft-title">Navigate</h4>
+                    <ul class="ft-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="collabs.html">Collabs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="ft-col">
+                    <h4 class="ft-title">Contact</h4>
+                    <ul class="ft-links">
+                        <li><a href="mailto:Sebasfox0510@gmail.com">Sebasfox0510@gmail.com</a></li>
+                        <li><a href="https://wa.me/573005999843" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                        <li><a href="contact.html">Send a message</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-bottom">
+                <span class="ft-copy">&copy; <span id="ftYear"></span> FoxDev. All rights reserved.</span>
+                <a class="ft-toplink" href="#home" aria-label="Back to top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

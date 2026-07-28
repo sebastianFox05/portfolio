@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+  <title id="title">Dashboard ecommerce</title>
+  <desc id="desc">Interfaz de tienda digital con metricas y catalogo.</desc>
+  <rect width="760" height="500" rx="28" fill="#f4f7f6"/>
+  <rect x="54" y="56" width="652" height="388" rx="22" fill="#ffffff"/>
+  <rect x="86" y="92" width="150" height="312" rx="18" fill="#10221f"/>
+  <rect x="274" y="92" width="196" height="92" rx="18" fill="#91d6c1"/>
+  <rect x="496" y="92" width="174" height="92" rx="18" fill="#f7c95f"/>
+  <rect x="274" y="222" width="282" height="22" rx="11" fill="#ccd8d4"/>
+  <rect x="274" y="270" width="236" height="22" rx="11" fill="#ccd8d4"/>
+  <rect x="274" y="318" width="306" height="22" rx="11" fill="#ccd8d4"/>
+  <circle cx="612" cy="318" r="38" fill="#1c3b36"/>
+</svg>

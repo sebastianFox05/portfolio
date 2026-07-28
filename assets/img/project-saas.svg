@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+  <title id="title">Producto SaaS</title>
+  <desc id="desc">Panel de gestion con tabla, graficas y barra lateral.</desc>
+  <rect width="760" height="500" rx="28" fill="#f4f7f6"/>
+  <rect x="60" y="60" width="640" height="380" rx="24" fill="#10221f"/>
+  <rect x="96" y="96" width="116" height="308" rx="18" fill="#1c3b36"/>
+  <rect x="248" y="96" width="214" height="110" rx="18" fill="#ffffff"/>
+  <rect x="492" y="96" width="152" height="110" rx="18" fill="#91d6c1"/>
+  <rect x="248" y="246" width="392" height="24" rx="12" fill="#dfe7e4"/>
+  <rect x="248" y="300" width="332" height="24" rx="12" fill="#dfe7e4"/>
+  <rect x="248" y="354" width="366" height="24" rx="12" fill="#dfe7e4"/>
+  <path d="M284 174c42-80 92 48 142-32" fill="none" stroke="#f7c95f" stroke-width="14" stroke-linecap="round"/>
+</svg>

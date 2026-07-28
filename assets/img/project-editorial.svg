@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+  <title id="title">Sitio editorial</title>
+  <desc id="desc">Layout editorial con modulos de contenido y fotografia.</desc>
+  <rect width="760" height="500" rx="28" fill="#eef4f2"/>
+  <rect x="58" y="64" width="302" height="372" rx="24" fill="#10221f"/>
+  <rect x="400" y="64" width="210" height="52" rx="18" fill="#f7c95f"/>
+  <rect x="400" y="150" width="238" height="22" rx="11" fill="#1c3b36"/>
+  <rect x="400" y="196" width="178" height="22" rx="11" fill="#91d6c1"/>
+  <rect x="400" y="242" width="260" height="22" rx="11" fill="#ccd8d4"/>
+  <rect x="400" y="316" width="132" height="90" rx="18" fill="#ffffff"/>
+  <rect x="552" y="316" width="132" height="90" rx="18" fill="#ffffff"/>
+  <circle cx="209" cy="250" r="88" fill="#91d6c1"/>
+</svg>

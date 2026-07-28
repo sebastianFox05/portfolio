@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Proyectos de FOX Developer con carrusel visual y modal interactivo.">
+    <meta property="og:title" content="FOX DEVELOPER | Projects">
+    <meta property="og:description" content="Portfolio frontend de FOX Developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/blog3.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>FOX DEVELOPER | Projects</title>
+    <link rel="icon" type="image/jpg" href="assets/img/foxDev.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="app" id="top">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <header class="topbar">
+            <div class="nav-pill">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo" class="logo-img dark-logo">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo Light" class="logo-img light-logo">
+                    </a>
+                    
+                </div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html" data-section="home">Home</a>
+                    <a class="nav-link" href="about.html" data-section="about">About</a>
+                    <a class="nav-link is-active" href="projects.html" data-section="projects">Projects</a>
+                    <a class="nav-link" href="services.html" data-section="services">Services</a>
+                    <a class="nav-link" href="collabs.html" data-section="collaboration">Collabs</a>
+                    <a class="nav-link" href="contact.html" data-section="contact">Contact</a>
+                    <span class="nav-underline" aria-hidden="true"></span>
+                </nav>
+                <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema" title="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </header>
+
+        <main class="pf2-section" id="projects" data-reveal>
+            <div class="pf2-wrap">
+                <div class="pf2-stage" aria-label="Portfolio carousel">
+                    <button class="pf2-arrow left" type="button" aria-label="Previous" id="pf2Prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="pf2-slots" id="pf2Slots" tabindex="0" aria-label="Portfolio (3 images)">
+                        <article class="pf2-card is-prev" id="pf2PrevCard" role="button" tabindex="-1"><img id="pf2PrevImg" src="" alt="" draggable="false"></article>
+                        <article class="pf2-card is-current" id="pf2CurCard" role="button" tabindex="-1"><img id="pf2CurImg" src="" alt="" draggable="false"></article>
+                        <article class="pf2-card is-next" id="pf2NextCard" role="button" tabindex="-1"><img id="pf2NextImg" src="" alt="" draggable="false"></article>
+                    </div>
+                    <button class="pf2-arrow right" type="button" aria-label="Next" id="pf2Next"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="pf2-dots" id="pf2Dots" aria-hidden="true"></div>
+                    <div class="pf2-side" aria-hidden="true">
+                        <button class="icon-btn" type="button"><i class="fa-brands fa-instagram"></i></button>
+                        <button class="icon-btn" type="button"><i class="fa-brands fa-linkedin-in"></i></button>
+                        <button class="icon-btn" type="button"><i class="fa-brands fa-x-twitter"></i></button>
+                    </div>
+                </div>
+                <div class="pf2-below" data-reveal>
+                    <h1 class="pf2-title">MY PORTFOLIO</h1>
+                    <div class="pf2-subtitle">HELLO I AM SEBASTIAN FOX FRONTEND DEVELOPER</div>
+                    <a class="btn btn-ghost pf2-cta" href="#" id="pf2View">VIEW PROJECT</a>
+                </div>
+            </div>
+            <section class="project-lab" data-reveal>
+                <div class="panel-head">
+                    <div>
+                        <div class="panel-kicker">CASE STUDIES</div>
+                        <h2 class="panel-title">Explora el tipo de proyecto</h2>
+                    </div>
+                    <div class="filter-row" id="projectFilters" aria-label="Filtrar proyectos">
+                        <button class="filter-chip active" type="button" data-filter="all">All</button>
+                        <button class="filter-chip" type="button" data-filter="brand">Brand</button>
+                        <button class="filter-chip" type="button" data-filter="web">Web</button>
+                        <button class="filter-chip" type="button" data-filter="ui">UI</button>
+                    </div>
+                </div>
+                <div class="case-grid" id="caseGrid">
+                    <article class="case-card" data-category="brand"><img src="assets/img/ISOTIPOFOXBEIGE.jpg" alt="Isotipo Fox"><div><span>Identity</span><h2>FOXDEV Visual ID</h2><p>Logo, isotipo y direccion visual para una presencia personal consistente.</p></div></article>
+                    <article class="case-card" data-category="web"><img src="assets/img/blog2.jpg" alt="Landing visual"><div><span>Landing</span><h2>Creative Landing</h2><p>Pagina de conversion con hero inmersivo, scroll reveal y CTA claros.</p></div></article>
+                    <article class="case-card" data-category="ui"><img src="assets/img/blog3.jpg" alt="Dashboard UI"><div><span>Interface</span><h2>Dashboard Concept</h2><p>Panel operativo con jerarquia visual, tarjetas y microinteracciones.</p></div></article>
+                    <article class="case-card" data-category="web"><img src="assets/img/fondo3.jpg" alt="Web experience"><div><span>Experience</span><h2>Portfolio System</h2><p>Sistema multipagina con navegacion, modal, tema claro/oscuro y contacto.</p></div></article>
+                </div>
+            </section>
+            <section class="info-grid" data-reveal>
+                <article class="info-card"><span>UX</span><h2>Flujo claro</h2><p>Cada proyecto se organiza para que el usuario entienda rapido donde esta y que puede hacer.</p></article>
+                <article class="info-card"><span>Motion</span><h2>Interaccion medida</h2><p>Animaciones suaves, feedback visual y controles que no distraen del contenido principal.</p></article>
+                <article class="info-card"><span>Code</span><h2>Base limpia</h2><p>HTML semantico, CSS por componentes y JavaScript separado del marcado.</p></article>
+                <article class="info-card"><span>Launch</span><h2>Listo para publicar</h2><p>Rutas organizadas, assets locales y estructura facil de mover a hosting.</p></article>
+            </section>
+            <section class="portfolio-panel" data-reveal>
+                <div class="panel-head">
+                    <div><div class="panel-kicker">PROJECT DEPTH</div><h2 class="panel-title">Como leo cada caso</h2></div>
+                </div>
+                <div class="faq-list">
+                    <button class="faq-item active" type="button"><span>Problema</span><p>Identifico que necesita comunicar el proyecto: vender un servicio, presentar una marca, ordenar contenido, mostrar experiencia o mejorar una interfaz existente.</p></button>
+                    <button class="faq-item" type="button"><span>Solucion visual</span><p>Defino hero, ritmo de secciones, uso de imagenes, contraste, tarjetas, botones y detalles de movimiento para que la pagina tenga direccion.</p></button>
+                    <button class="faq-item" type="button"><span>Solucion tecnica</span><p>Divido componentes, mantengo estilos reutilizables, cuido rutas de assets y dejo interacciones en JavaScript para que el HTML siga limpio.</p></button>
+                    <button class="faq-item" type="button"><span>Resultado</span><p>Un sitio que se puede revisar, ampliar, publicar y presentar sin depender de explicaciones externas. La pagina debe hablar por si sola.</p></button>
+                </div>
+            </section>
+            <section class="info-grid" data-reveal>
+                <article class="info-card"><span>Brand case</span><h2>Identidad FOXDEV</h2><p>Uso del logo, isotipo y fotografia oscura para construir una presencia reconocible, elegante y coherente en todas las paginas.</p></article>
+                <article class="info-card"><span>Landing case</span><h2>Oferta enfocada</h2><p>Secciones reducidas, mensaje principal fuerte, CTA visibles y suficiente informacion para que una marca pueda captar clientes.</p></article>
+                <article class="info-card"><span>Dashboard case</span><h2>UI operativa</h2><p>Componentes de datos, paneles, metricas y estados interactivos pensados para leer informacion rapido y tomar decisiones.</p></article>
+                <article class="info-card"><span>System case</span><h2>Portfolio modular</h2><p>Paginas separadas, nav activa, footer consistente, formularios, filtros, modal y controles que se pueden extender con mas contenido.</p></article>
+            </section>
+            <section class="portfolio-panel" data-reveal>
+                <div class="panel-head">
+                    <div><div class="panel-kicker">CASE VALUE</div><h2 class="panel-title">Que valor demuestra el portfolio</h2></div>
+                </div>
+                <div class="info-grid">
+                    <article class="info-card"><span>Evidence</span><h2>Capacidad visual</h2><p>Las imagenes, fondos, tarjetas y jerarquia muestran criterio estetico y una direccion de arte consistente para marcas digitales.</p></article>
+                    <article class="info-card"><span>Evidence</span><h2>Capacidad tecnica</h2><p>El carrusel, modal, filtros, tema claro/oscuro y formulario prueban interactividad real con JavaScript separado del contenido.</p></article>
+                    <article class="info-card"><span>Evidence</span><h2>Capacidad de orden</h2><p>La division multipagina ayuda a mostrar informacion sin saturar una sola landing y permite crecer secciones por separado.</p></article>
+                    <article class="info-card"><span>Evidence</span><h2>Capacidad de venta</h2><p>Los casos conectan servicios, contacto y colaboraciones para que el portfolio no solo se vea bien, tambien genere conversacion.</p></article>
+                </div>
+            </section>
+            <div class="pf2-modal" id="pf2Modal" aria-hidden="true" role="dialog" aria-modal="true">
+                <div class="pf2-modal-overlay" data-close></div>
+                <div class="pf2-modal-card" role="document">
+                    <button class="pf2-modal-close" type="button" aria-label="Close" data-close><i class="fa-solid fa-xmark"></i></button>
+                    <div class="pf2-modal-media"><img id="pf2ModalImg" src="" alt=""></div>
+                    <div class="pf2-modal-body">
+                        <div class="pf2-modal-title" id="pf2ModalTitle"></div>
+                        <div class="pf2-modal-sub" id="pf2ModalSub"></div>
+                        <p class="pf2-modal-desc" id="pf2ModalDesc"></p>
+                        <div class="pf2-modal-actions">
+                            <a class="btn btn-primary" href="contact.html" data-close>Hire me</a>
+                            <button class="btn btn-ghost" type="button" data-close>Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <a href="https://wa.me/573005999843?text=Hola%20FoxDev%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp" title="WhatsApp" id="waFloat"><span class="wa-ping" aria-hidden="true"></span><span class="wa-tooltip" role="tooltip">Escribenos en WhatsApp</span><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    <footer class="ft" id="footer">
+        <div class="ft-wrap">
+            <div class="ft-top">
+                <div class="ft-brand">
+                    <div class="ft-logo ft-logo-foxdev"><img src="assets/img/logoFox.png" alt="FOXDEV Logo" draggable="false"></div>
+                    <p class="ft-desc">Frontend developer focused on clean UI, micro-interactions, and performant web experiences.</p>
+                    <div class="ft-social SocialLinks" aria-label="Social links">
+                        <a class="ft-ic SocialLinks-item" href="https://www.instagram.com/foxdeveloper_?igsh=M21qdjg2MnJ4czg1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a class="ft-ic SocialLinks-item" href="https://www.linkedin.com/in/sebastian-fox-644816232" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a class="ft-ic SocialLinks-item" href="https://github.com/sebastianFox05" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        <a class="ft-ic SocialLinks-item" href="mailto:Sebasfox0510@gmail.com" aria-label="Correo" title="Correo"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="ft-col"><h4 class="ft-title">Navigate</h4><ul class="ft-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Portfolio</a></li><li><a href="services.html">Services</a></li><li><a href="collabs.html">Collabs</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="ft-col"><h4 class="ft-title">Contact</h4><ul class="ft-links"><li><a href="mailto:sebasfox0510@gmail.com">sebasfox0510@gmail.com</a></li><li><a href="https://wa.me/573005999843" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="contact.html">Send a message</a></li></ul></div>
+            </div>
+            <div class="ft-bottom"><span class="ft-copy">&copy; <span id="ftYear"></span> FoxDev. All rights reserved.</span><a class="ft-toplink" href="#top" aria-label="Back to top">Back to top <i class="fa-solid fa-arrow-up"></i></a></div>
+        </div>
+    </footer>
+</body>
+</html>

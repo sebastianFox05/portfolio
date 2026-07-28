@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Servicios frontend de FOX Developer: portafolios, landings, interfaces y refactorización visual.">
+    <meta property="og:title" content="FOX DEVELOPER | Services">
+    <meta property="og:description" content="Servicios frontend y estimador interactivo.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/fonfoOfi.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>FOX DEVELOPER | Services</title>
+    <link rel="icon" type="image/jpg" href="assets/img/foxDev.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="app" id="top">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <header class="topbar">
+            <div class="nav-pill">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo" class="logo-img dark-logo">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo Light" class="logo-img light-logo">
+                    </a>
+                    
+                </div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html" data-section="home">Home</a>
+                    <a class="nav-link" href="about.html" data-section="about">About</a>
+                    <a class="nav-link" href="projects.html" data-section="projects">Projects</a>
+                    <a class="nav-link is-active" href="services.html" data-section="services">Services</a>
+                    <a class="nav-link" href="collabs.html" data-section="collaboration">Collabs</a>
+                    <a class="nav-link" href="contact.html" data-section="contact">Contact</a>
+                    <span class="nav-underline" aria-hidden="true"></span>
+                </nav>
+                <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema" title="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-hero" id="services" data-reveal>
+                <div class="page-hero-copy">
+                    <div class="kicker">SERVICES</div>
+                    <h1 class="page-title">Sitios y productos web con estética, interacción y estructura.</h1>
+                    <p class="page-lead">Elige el tipo de entrega, ajusta el alcance y obtén una lectura rápida del proyecto antes de escribirme.</p>
+                </div>
+                <div class="service-estimator" data-reveal>
+                    <div class="panel-kicker">PROJECT ESTIMATOR</div>
+                    <h2 class="panel-title">Configura tu idea</h2>
+                    <label class="estimate-row"><span>Paginas</span><input id="estimatePages" type="range" min="1" max="8" value="4"><strong id="estimatePagesValue">4</strong></label>
+                    <label class="estimate-row"><span>Interactividad</span><input id="estimateMotion" type="range" min="1" max="5" value="3"><strong id="estimateMotionValue">3</strong></label>
+                    <div class="estimate-result"><span id="estimateLabel">Portfolio avanzado</span><strong id="estimateTime">2-3 semanas</strong></div>
+                    <a class="btn btn-primary" href="contact.html">Start project</a>
+                </div>
+            </section>
+
+            <section class="info-grid" data-reveal>
+                <article class="info-card"><span>Portfolio</span><h2>Marca personal</h2><p>Home, proyectos, contacto, animaciones y una estructura lista para crecer.</p></article>
+                <article class="info-card"><span>Landing</span><h2>Oferta clara</h2><p>Pagina enfocada en conversion, responsive, SEO base y microinteracciones.</p></article>
+                <article class="info-card"><span>Product UI</span><h2>Interfaz web</h2><p>Dashboards, modulos, estados visuales y componentes reutilizables.</p></article>
+                <article class="info-card"><span>Refactor</span><h2>Orden visual</h2><p>Mejoras de CSS, estructura, responsive, accesibilidad y pulido de UI existente.</p></article>
+            </section>
+
+            <section class="portfolio-panel" data-reveal>
+                <div class="panel-head">
+                    <div><div class="panel-kicker">PACKAGES</div><h2 class="panel-title">Elige una ruta</h2></div>
+                </div>
+                <div class="package-grid" id="packageGrid">
+                    <button class="package-card active" type="button" data-package="Starter incluye una landing pulida, responsive, SEO base y formulario."><span>Starter</span><strong>Landing</strong><p>Ideal para validar una marca, servicio u oferta puntual.</p></button>
+                    <button class="package-card" type="button" data-package="Portfolio incluye multiples paginas, carrusel, contacto y contenido ampliado."><span>Pro</span><strong>Portfolio</strong><p>Para mostrar perfil, proyectos, servicios y colaboraciones.</p></button>
+                    <button class="package-card" type="button" data-package="Product UI incluye componentes, estados, paneles e interacciones avanzadas."><span>Studio</span><strong>Product UI</strong><p>Para interfaces operativas, dashboards o herramientas internas.</p></button>
+                </div>
+                <p class="panel-note" id="packageNote">Starter incluye una landing pulida, responsive, SEO base y formulario.</p>
+            </section>
+
+            <section class="info-grid" data-reveal>
+                <article class="info-card"><span>Included</span><h2>Arquitectura</h2><p>Mapa de paginas, estructura de secciones, rutas entre vistas y distribucion del contenido para que el sitio crezca sin perder orden.</p></article>
+                <article class="info-card"><span>Included</span><h2>Responsive</h2><p>Adaptacion para desktop, tablet y movil, cuidando que textos, tarjetas, botones e imagenes mantengan jerarquia y no se monten.</p></article>
+                <article class="info-card"><span>Included</span><h2>Interaccion</h2><p>Scroll reveal, estados hover, filtros, sliders, modales, feedback de formulario y detalles que hacen que la interfaz responda al usuario.</p></article>
+                <article class="info-card"><span>Included</span><h2>Entrega</h2><p>Assets organizados, HTML limpio, CSS estructurado, JS separado y recomendaciones para publicar o continuar el proyecto.</p></article>
+            </section>
+
+            <section class="portfolio-panel" data-reveal>
+                <div class="panel-head">
+                    <div><div class="panel-kicker">SERVICE FAQ</div><h2 class="panel-title">Detalles antes de contratar</h2></div>
+                </div>
+                <div class="faq-list">
+                    <button class="faq-item active" type="button"><span>Que necesito enviarte?</span><p>Nombre de la marca, objetivo, referencias visuales, textos disponibles, imagenes o logo y una idea del tipo de pagina que quieres.</p></button>
+                    <button class="faq-item" type="button"><span>Que pasa si no tengo todo el contenido?</span><p>Puedo ayudarte a organizar una estructura inicial con textos guia para que luego reemplaces o ajustes la informacion final.</p></button>
+                    <button class="faq-item" type="button"><span>Se puede agregar mas de una pagina?</span><p>Si. El sistema esta preparado para paginas independientes como Home, About, Projects, Services, Collabs y Contact.</p></button>
+                    <button class="faq-item" type="button"><span>Tambien puedo pedir solo mejoras?</span><p>Si. Puedo trabajar sobre un sitio existente para corregir responsive, mejorar estilos, ordenar CSS, sumar animaciones o limpiar estructura.</p></button>
+                </div>
+            </section>
+
+            <section class="portfolio-panel" data-reveal>
+                <div class="panel-head">
+                    <div><div class="panel-kicker">DELIVERABLES</div><h2 class="panel-title">Que recibes al final</h2></div>
+                </div>
+                <div class="info-grid">
+                    <article class="info-card"><span>Files</span><h2>Estructura lista</h2><p>Paginas HTML organizadas, CSS centralizado, JavaScript separado, assets locales y rutas faciles de mantener.</p></article>
+                    <article class="info-card"><span>UI</span><h2>Sistema visual</h2><p>Botones, tarjetas, formularios, navegacion, paneles y estados visuales que se sienten coherentes en todo el sitio.</p></article>
+                    <article class="info-card"><span>QA</span><h2>Revision final</h2><p>Chequeo de enlaces, contraste, legibilidad, responsive, formularios, modales, scroll y comportamiento de tema claro/oscuro.</p></article>
+                    <article class="info-card"><span>Growth</span><h2>Base escalable</h2><p>Una estructura pensada para sumar nuevas paginas, proyectos, servicios, fotos, textos y colaboraciones sin rehacer todo.</p></article>
+                </div>
+            </section>
+        </main>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <a href="https://wa.me/573005999843?text=Hola%20FoxDev%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp" title="WhatsApp" id="waFloat"><span class="wa-ping" aria-hidden="true"></span><span class="wa-tooltip" role="tooltip">Escribenos en WhatsApp</span><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    <footer class="ft" id="footer"><div class="ft-wrap"><div class="ft-top"><div class="ft-brand"><div class="ft-logo ft-logo-foxdev"><img src="assets/img/logoFox.png" alt="FOXDEV Logo" draggable="false"></div><p class="ft-desc">Frontend developer focused on clean UI, micro-interactions, and performant web experiences.</p><div class="ft-social SocialLinks" aria-label="Social links"><a class="ft-ic SocialLinks-item" href="https://www.instagram.com/foxdeveloper_?igsh=M21qdjg2MnJ4czg1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="https://www.linkedin.com/in/sebastian-fox-644816232" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="https://github.com/sebastianFox05" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="mailto:Sebasfox0510@gmail.com" aria-label="Correo" title="Correo"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></div></div><div class="ft-col"><h4 class="ft-title">Navigate</h4><ul class="ft-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Portfolio</a></li><li><a href="services.html">Services</a></li><li><a href="collabs.html">Collabs</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="ft-col"><h4 class="ft-title">Contact</h4><ul class="ft-links"><li><a href="mailto:sebasfox0510@gmail.com">sebasfox0510@gmail.com</a></li><li><a href="https://wa.me/573005999843" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="contact.html">Send a message</a></li></ul></div></div><div class="ft-bottom"><span class="ft-copy">&copy; <span id="ftYear"></span> FoxDev. All rights reserved.</span><a class="ft-toplink" href="#top" aria-label="Back to top">Back to top <i class="fa-solid fa-arrow-up"></i></a></div></div></footer>
+</body>
+</html>

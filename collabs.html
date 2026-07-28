@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Colaboración con FOX Developer mediante paneles interactivos, analítica en vivo y laboratorio de componentes.">
+    <meta property="og:title" content="FOX DEVELOPER | Collaboration">
+    <meta property="og:description" content="Colaboraciones y experimentos interactivos de FOX Developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/fondo3.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>FOX DEVELOPER | Collaboration</title>
+    <link rel="icon" type="image/jpg" href="assets/img/foxDev.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="app" id="top">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <header class="topbar">
+            <div class="nav-pill">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo" class="logo-img dark-logo">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo Light" class="logo-img light-logo">
+                    </a>
+                    
+                </div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html" data-section="home">Home</a>
+                    <a class="nav-link" href="about.html" data-section="about">About</a>
+                    <a class="nav-link" href="projects.html" data-section="projects">Projects</a>
+                    <a class="nav-link" href="services.html" data-section="services">Services</a>
+                    <a class="nav-link is-active" href="collabs.html" data-section="collaboration">Collabs</a>
+                    <a class="nav-link" href="contact.html" data-section="contact">Contact</a>
+                    <span class="nav-underline" aria-hidden="true"></span>
+                </nav>
+                <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema" title="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <section class="section" id="collaboration" data-title="Collaboration">
+                <div class="section-inner">
+                    <h1>Collabs</h1>
+                    <p>Espacios donde puedo sumarme a equipos, marcas y productos para convertir una idea visual en una experiencia web interactiva.</p>
+                </div>
+            </section>
+
+            <section class="portfolio-panel" data-reveal>
+                <div class="panel-head">
+                    <div><div class="panel-kicker">COLLAB MODES</div><h2 class="panel-title">Formas de trabajar juntos</h2></div>
+                </div>
+                <div class="collab-tabs" id="collabTabs">
+                    <button class="filter-chip active" type="button" data-collab="build">Build</button>
+                    <button class="filter-chip" type="button" data-collab="audit">Audit</button>
+                    <button class="filter-chip" type="button" data-collab="ship">Ship</button>
+                </div>
+                <div class="collab-panel" id="collabPanel">
+                    <h3>Build from scratch</h3>
+                    <p>Construimos una pagina o interfaz completa desde contenido, referencias y objetivos claros.</p>
+                    <ul>
+                        <li>Arquitectura visual</li>
+                        <li>Componentes responsive</li>
+                        <li>Interacciones y estados</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="info-grid" data-reveal>
+                <article class="info-card"><span>Teams</span><h2>Equipos creativos</h2><p>Puedo entrar como apoyo frontend para convertir propuestas visuales en pantallas navegables, responsive y listas para mostrar.</p></article>
+                <article class="info-card"><span>Brands</span><h2>Marcas personales</h2><p>Trabajo con emprendedores, abogados, hoteles, estudios o perfiles profesionales que necesitan una presencia digital con identidad.</p></article>
+                <article class="info-card"><span>Products</span><h2>Productos digitales</h2><p>Puedo apoyar interfaces de dashboards, herramientas internas, prototipos de venta o experiencias donde el usuario interactua con datos.</p></article>
+                <article class="info-card"><span>Launch</span><h2>Cierres rapidos</h2><p>Si ya existe un avance, puedo entrar a pulir UI, ordenar CSS, corregir responsive, revisar estados y preparar la demo final.</p></article>
+            </section>
+
+            <section class="portfolio-panel" data-reveal>
+                <div class="panel-head">
+                    <div><div class="panel-kicker">COLLAB CHECKLIST</div><h2 class="panel-title">Para colaborar mejor</h2></div>
+                </div>
+                <div class="faq-list">
+                    <button class="faq-item active" type="button"><span>Referencias visuales</span><p>Imagenes, sitios, colores, logos o moodboards ayudan a mantener el proyecto cerca de la direccion que tienes en mente.</p></button>
+                    <button class="faq-item" type="button"><span>Alcance definido</span><p>Numero de paginas, secciones, formularios, efectos, contenido y fecha objetivo. Mientras mas claro sea el alcance, mas rapido se avanza.</p></button>
+                    <button class="faq-item" type="button"><span>Feedback puntual</span><p>Los cambios funcionan mejor cuando se agrupan por prioridad: estructura, contenido, responsive, estilo visual e interacciones.</p></button>
+                    <button class="faq-item" type="button"><span>Entrega compartida</span><p>El objetivo es dejar una pieza que el equipo pueda revisar, presentar, publicar o seguir ampliando sin perder consistencia.</p></button>
+                </div>
+            </section>
+
+            <section class="portfolio-panel" data-reveal>
+                <div class="panel-head">
+                    <div><div class="panel-kicker">COLLAB VALUE</div><h2 class="panel-title">Donde puedo aportar mas</h2></div>
+                </div>
+                <div class="info-grid">
+                    <article class="info-card"><span>Design to code</span><h2>De idea a pantalla</h2><p>Transformo referencias, wireframes o diseños sueltos en interfaces navegables que se pueden probar y presentar.</p></article>
+                    <article class="info-card"><span>UI repair</span><h2>Correccion visual</h2><p>Detecto inconsistencias de spacing, color, jerarquia, alineacion y responsive para dejar una interfaz mas profesional.</p></article>
+                    <article class="info-card"><span>Prototype</span><h2>Demo interactiva</h2><p>Creo prototipos web con botones, sliders, contadores, filtros o paneles vivos para explicar mejor una idea ante clientes.</p></article>
+                    <article class="info-card"><span>Handoff</span><h2>Entrega ordenada</h2><p>Dejo archivos legibles, clases claras y notas de continuidad para que otro desarrollador pueda seguir sin perder tiempo.</p></article>
+                </div>
+            </section>
+
+            <section class="isec" id="interaction-score" data-reveal>
+                <div class="isec-wrap">
+                    <header class="isec-head">
+                        <div>
+                            <div class="isec-kicker">LIVE ANALYTICS</div>
+                            <h2 class="isec-title">INTERACTION SCORE</h2>
+                            <p class="isec-sub">This panel updates in real time based on how you interact with the page.</p>
+                        </div>
+                        <div class="isec-actions">
+                            <button class="isec-btn" type="button" id="isecReset">Reset</button>
+                            <button class="isec-btn isec-btn-ghost" type="button" id="isecPause">Pause</button>
+                        </div>
+                    </header>
+                    <div class="isec-grid">
+                        <div class="isec-card isec-card-big">
+                            <div class="isec-card-top"><div class="isec-label">Score</div><div class="isec-pill" id="isecMood">Calm</div></div>
+                            <div class="isec-score"><div class="isec-score-num" id="isecScore">0</div><div class="isec-score-bar"><div class="isec-score-fill" id="isecScoreFill"></div></div></div>
+                            <div class="isec-hint" id="isecHint">Tip: scroll and click around to see the score change.</div>
+                        </div>
+                        <div class="isec-card"><div class="isec-card-top"><div class="isec-label">Clicks</div><div class="isec-mini" id="isecClicksDelta">+0</div></div><div class="isec-metric"><div class="isec-value" id="isecClicks">0</div><div class="isec-unit">total</div></div><div class="isec-spark"><span id="isecClicksSpark"></span></div></div>
+                        <div class="isec-card"><div class="isec-card-top"><div class="isec-label">Scroll depth</div><div class="isec-mini" id="isecScrollDelta">+0%</div></div><div class="isec-metric"><div class="isec-value" id="isecScroll">0%</div><div class="isec-unit">of page</div></div><div class="isec-progress"><div class="isec-progress-fill" id="isecScrollFill"></div></div></div>
+                        <div class="isec-card"><div class="isec-card-top"><div class="isec-label">Time active</div><div class="isec-mini" id="isecFocus">active</div></div><div class="isec-metric"><div class="isec-value" id="isecTime">0:00</div><div class="isec-unit">mm:ss</div></div><div class="isec-hline"></div></div>
+                        <div class="isec-card"><div class="isec-card-top"><div class="isec-label">Cards opened</div><div class="isec-mini">modals</div></div><div class="isec-metric"><div class="isec-value" id="isecModals">0</div><div class="isec-unit">opened</div></div><div class="isec-hline"></div></div>
+                        <div class="isec-card"><div class="isec-card-top"><div class="isec-label">Theme toggles</div><div class="isec-mini">dark/light</div></div><div class="isec-metric"><div class="isec-value" id="isecThemes">0</div><div class="isec-unit">switches</div></div><div class="isec-hline"></div></div>
+                    </div>
+                    <div class="isec-footer">
+                        <div class="isec-footnote">This is a local demo counter (no tracking, no cookies).</div>
+                        <div class="isec-badges"><span class="isec-badge" id="isecBadge1">UX-minded</span><span class="isec-badge" id="isecBadge2">Minimal UI</span><span class="isec-badge" id="isecBadge3">Interactive</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flow" id="live-flow" data-reveal>
+                <div class="flow-wrap">
+                    <header class="flow-head">
+                        <div><div class="flow-kicker">BEHAVIOR</div><h2 class="flow-title">LIVE USER FLOW</h2><p class="flow-sub">This flow updates locally based on how you navigate the page (no tracking, no cookies).</p></div>
+                        <div class="flow-actions"><button class="flow-btn" type="button" id="flowReset">Reset</button><button class="flow-btn flow-btn-ghost" type="button" id="flowPause">Pause</button></div>
+                    </header>
+                    <div class="flow-grid">
+                        <div class="flow-card flow-map" aria-label="Live flow map"><div class="flow-map-top"><div class="flow-label">Current route</div><div class="flow-pill" id="flowNow">Home</div></div><div class="flow-nodes" id="flowNodes"></div><div class="flow-edges" id="flowEdges"></div><div class="flow-hint" id="flowHint">Tip: scroll to another section to see the route update.</div></div>
+                        <div class="flow-card flow-log"><div class="flow-card-top"><div class="flow-label">Transitions</div><div class="flow-mini" id="flowCount">0</div></div><div class="flow-log-list" id="flowList" aria-live="polite"></div><div class="flow-mini-note">Showing last 8 transitions.</div></div>
+                        <div class="flow-card flow-stats"><div class="flow-card-top"><div class="flow-label">Highlights</div><div class="flow-mini">live</div></div><div class="flow-stat"><div class="flow-stat-k">Most visited</div><div class="flow-stat-v" id="flowMost">-</div></div><div class="flow-stat"><div class="flow-stat-k">Deepest section</div><div class="flow-stat-v" id="flowDeep">-</div></div><div class="flow-stat"><div class="flow-stat-k">Time in current</div><div class="flow-stat-v" id="flowTime">0s</div></div><div class="flow-bar"><div class="flow-bar-fill" id="flowBarFill"></div></div></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sb" id="component-sandbox" data-reveal>
+                <div class="sb-wrap">
+                    <header class="sb-head">
+                        <div><div class="sb-kicker">DESIGN SYSTEM</div><h2 class="sb-title">COMPONENT SANDBOX</h2><p class="sb-sub">Adjust a few tokens and see a production-style card update instantly.</p></div>
+                        <div class="sb-actions"><button class="sb-btn" type="button" id="sbPresetMinimal">Minimal</button><button class="sb-btn" type="button" id="sbPresetGlass">Glass</button><button class="sb-btn sb-btn-ghost" type="button" id="sbReset">Reset</button></div>
+                    </header>
+                    <div class="sb-grid">
+                        <div class="sb-card"><div class="sb-card-top"><div class="sb-label">Controls</div><div class="sb-mini" id="sbStatus">live</div></div><div class="sb-controls"><label class="sb-row"><span>Radius</span><input id="sbRadius" type="range" min="10" max="28" value="18"><strong id="sbRadiusV">18px</strong></label><label class="sb-row"><span>Padding</span><input id="sbPadding" type="range" min="14" max="28" value="18"><strong id="sbPaddingV">18px</strong></label><label class="sb-row"><span>Shadow</span><input id="sbShadow" type="range" min="10" max="70" value="42"><strong id="sbShadowV">42</strong></label><label class="sb-row"><span>Blur</span><input id="sbBlur" type="range" min="0" max="14" value="8"><strong id="sbBlurV">8px</strong></label></div><div class="sb-note">Tip: hover the preview to see focus and hover states.</div></div>
+                        <div class="sb-card sb-preview-wrap"><div class="sb-card-top"><div class="sb-label">Preview</div><div class="sb-mini">component</div></div><div class="sb-preview" id="sbPreview"><div class="sb-chip">UI Component</div><h3 class="sb-h">Minimal, but alive</h3><p class="sb-p">This preview reflects real tokens (radius/padding/shadow/blur). Clean design with intent.</p><div class="sb-actions-row"><button class="sb-cta" type="button" id="sbAction">Trigger micro-interaction</button><span class="sb-toast" id="sbToast" aria-live="polite"></span></div></div><div class="sb-tokens" id="sbTokens"><span>--radius: <b id="sbTRadius">18px</b></span><span>--pad: <b id="sbTPad">18px</b></span><span>--shadow: <b id="sbTShadow">42</b></span><span>--blur: <b id="sbTBlur">8px</b></span></div></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <a href="https://wa.me/573005999843?text=Hola%20FoxDev%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp" title="WhatsApp" id="waFloat"><span class="wa-ping" aria-hidden="true"></span><span class="wa-tooltip" role="tooltip">Escribenos en WhatsApp</span><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    <footer class="ft" id="footer"><div class="ft-wrap"><div class="ft-top"><div class="ft-brand"><div class="ft-logo ft-logo-foxdev"><img src="assets/img/logoFox.png" alt="FOXDEV Logo" draggable="false"></div><p class="ft-desc">Frontend developer focused on clean UI, micro-interactions, and performant web experiences.</p><div class="ft-social SocialLinks" aria-label="Social links"><a class="ft-ic SocialLinks-item" href="https://www.instagram.com/foxdeveloper_?igsh=M21qdjg2MnJ4czg1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="https://www.linkedin.com/in/sebastian-fox-644816232" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="https://github.com/sebastianFox05" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="mailto:Sebasfox0510@gmail.com" aria-label="Correo" title="Correo"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></div></div><div class="ft-col"><h4 class="ft-title">Navigate</h4><ul class="ft-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Portfolio</a></li><li><a href="services.html">Services</a></li><li><a href="collabs.html">Collabs</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="ft-col"><h4 class="ft-title">Contact</h4><ul class="ft-links"><li><a href="mailto:sebasfox0510@gmail.com">sebasfox0510@gmail.com</a></li><li><a href="https://wa.me/573005999843" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="contact.html">Send a message</a></li></ul></div></div><div class="ft-bottom"><span class="ft-copy">&copy; <span id="ftYear"></span> FoxDev. All rights reserved.</span><a class="ft-toplink" href="#top" aria-label="Back to top">Back to top <i class="fa-solid fa-arrow-up"></i></a></div></div></footer>
+</body>
+</html>

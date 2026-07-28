@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Contacta a FOX Developer para proyectos frontend y diseño UI.">
+    <meta property="og:title" content="FOX DEVELOPER | Contact">
+    <meta property="og:description" content="Formulario de contacto de FOX Developer.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/foxDev.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>FOX DEVELOPER | Contact</title>
+    <link rel="icon" type="image/jpg" href="assets/img/foxDev.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/i18n.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+    <div class="app" id="top">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <header class="topbar">
+            <div class="nav-pill">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo" class="logo-img dark-logo">
+                        <img src="assets/img/logoFox.png" alt="FOXDEV Logo Light" class="logo-img light-logo">
+                    </a>
+                    
+                </div>
+                <nav class="nav">
+                    <a class="nav-link" href="index.html" data-section="home">Home</a>
+                    <a class="nav-link" href="about.html" data-section="about">About</a>
+                    <a class="nav-link" href="projects.html" data-section="projects">Projects</a>
+                    <a class="nav-link" href="services.html" data-section="services">Services</a>
+                    <a class="nav-link" href="collabs.html" data-section="collaboration">Collabs</a>
+                    <a class="nav-link is-active" href="contact.html" data-section="contact">Contact</a>
+                    <span class="nav-underline" aria-hidden="true"></span>
+                </nav>
+                <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema" title="Cambiar tema"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </header>
+
+        <main class="ct-section" id="contact" data-reveal>
+            <div class="ct-wrap">
+                <div class="ct-left" data-reveal>
+                    <h1 class="ct-heading">CONTACT</h1>
+                    <p class="ct-lead">Cuéntame que quieres construir: portfolio, landing, interfaz de producto, rediseño o colaboración puntual. Te respondo con una ruta clara para avanzar.</p>
+                    <div class="ct-meta">
+                        <div class="ct-meta-item"><div class="ct-meta-title">Location</div><div class="ct-meta-value">Cartagena, Colombia</div></div>
+                        <div class="ct-meta-item"><div class="ct-meta-title">E-mail</div><div class="ct-meta-value"><a class="ct-link" href="mailto:Sebasfox0510@gmail.com">Sebasfox0510@gmail.com</a></div></div>
+                    </div>
+                    <div class="ct-social" aria-label="Social links">
+                        <button class="icon-btn ct-ic" type="button" data-copy="https://instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></button>
+                        <button class="icon-btn ct-ic" type="button" data-copy="https://linkedin.com/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></button>
+                        <button class="icon-btn ct-ic" type="button" data-copy="https://x.com/" aria-label="X"><i class="fa-brands fa-x-twitter"></i></button>
+                    </div>
+                </div>
+                <div class="ct-right" data-reveal>
+                    <h2 class="ct-heading ct-heading-right">CONTACT FORM</h2>
+                    <form class="ct-form" id="contactForm" action="https://formspree.io/f/xaqqyzgl" method="POST" novalidate>
+                        <label class="ct-field"><span class="ct-label">Your name</span><input class="ct-input" type="text" name="name" autocomplete="name" required minlength="2"></label>
+                        <label class="ct-field"><span class="ct-label">Your phone</span><input class="ct-input" type="tel" name="phone" autocomplete="tel"></label>
+                        <label class="ct-field"><span class="ct-label">Your email</span><input class="ct-input" type="email" name="email" autocomplete="email" required></label>
+                        <div class="quick-subjects" id="quickSubjects" aria-label="Temas rapidos">
+                            <button class="filter-chip" type="button" data-message="Hola, quiero crear un portfolio multipagina con animaciones y contacto.">Portfolio</button>
+                            <button class="filter-chip" type="button" data-message="Hola, necesito una landing clara para presentar un servicio o marca.">Landing</button>
+                            <button class="filter-chip" type="button" data-message="Hola, quiero mejorar una interfaz existente con mejor responsive e interactividad.">Refactor</button>
+                            <button class="filter-chip" type="button" data-message="Hola, quiero colaborar en una interfaz o proyecto web con apoyo frontend.">Collab</button>
+                            <button class="filter-chip" type="button" data-message="Hola, necesito un dashboard o pantalla de producto con componentes interactivos.">Dashboard</button>
+                            <button class="filter-chip" type="button" data-message="Hola, quiero revisar mi pagina actual y detectar mejoras visuales, responsive y de codigo.">Audit</button>
+                        </div>
+                        <label class="ct-field ct-field-textarea"><span class="ct-label">Message</span><textarea class="ct-input ct-textarea" name="message" rows="4" required maxlength="500"></textarea><div class="ct-counter"><span id="ctCount">0</span>/500</div></label>
+                        <button class="ct-submit" type="submit"><span class="ct-submit-text">SEND MESSAGE</span><span class="ct-submit-dot" aria-hidden="true"></span></button>
+                        <input type="hidden" name="source" value="Website Contact Form">
+                        <input type="hidden" name="_subject" value="New message from FOXDEV website">
+                        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                        <div class="ct-note" id="ctNote" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <section class="info-grid" data-reveal>
+            <article class="info-card"><span>Step 01</span><h2>Cuenta la idea</h2><p>Describe que quieres construir, para quien es, que problema resuelve y que paginas o secciones tienes en mente.</p></article>
+            <article class="info-card"><span>Step 02</span><h2>Envia referencias</h2><p>Comparte links, imagenes, colores, logos, fotos o sitios que te gusten. Eso acelera la direccion visual del proyecto.</p></article>
+            <article class="info-card"><span>Step 03</span><h2>Define prioridad</h2><p>Puede ser lanzar rapido, pulir una marca, mejorar responsive, crear una demo o dejar una base lista para escalar.</p></article>
+            <article class="info-card"><span>Step 04</span><h2>Arrancamos claro</h2><p>Con esa informacion puedo responder con una ruta: alcance, paginas, interacciones, tiempos aproximados y siguientes pasos.</p></article>
+        </section>
+        <section class="portfolio-panel" data-reveal>
+            <div class="panel-head">
+                <div><div class="panel-kicker">FAQ</div><h2 class="panel-title">Preguntas rapidas</h2></div>
+            </div>
+            <div class="faq-list" id="faqList">
+                <button class="faq-item active" type="button"><span>Que necesito para empezar?</span><p>Una idea base, referencias visuales y el contenido principal. Si falta algo, lo organizamos.</p></button>
+                <button class="faq-item" type="button"><span>Tambien haces responsive?</span><p>Si. La experiencia se ajusta para desktop, tablet y movil desde la estructura del CSS.</p></button>
+                <button class="faq-item" type="button"><span>Puedes trabajar sobre codigo existente?</span><p>Si. Puedo ordenar estilos, corregir layout, mejorar interacciones y dejar una base mas mantenible.</p></button>
+                <button class="faq-item" type="button"><span>Cuanto detalle debo mandar?</span><p>Mientras mas contexto tengas, mejor: objetivo, fecha, referencias, paginas, tipo de usuario, marca y contenido disponible.</p></button>
+                <button class="faq-item" type="button"><span>Como respondes el mensaje?</span><p>Te puedo contestar con una propuesta de estructura, lista de entregables, dudas importantes y una ruta para empezar sin vueltas.</p></button>
+            </div>
+        </section>
+        <section class="portfolio-panel" data-reveal>
+            <div class="panel-head">
+                <div><div class="panel-kicker">BRIEF GUIDE</div><h2 class="panel-title">Datos que ayudan a cotizar mejor</h2></div>
+            </div>
+            <div class="info-grid">
+                <article class="info-card"><span>Goal</span><h2>Objetivo</h2><p>Cuenta si quieres vender, presentar marca, mostrar proyectos, captar contactos, lanzar una demo o mejorar un sitio actual.</p></article>
+                <article class="info-card"><span>Scope</span><h2>Alcance</h2><p>Indica cuantas paginas necesitas, que secciones son obligatorias y si quieres efectos, formularios, galerias o dashboards.</p></article>
+                <article class="info-card"><span>Assets</span><h2>Material</h2><p>Logo, fotos, textos, colores, redes, links y referencias visuales permiten acelerar la construccion y mantener la identidad.</p></article>
+                <article class="info-card"><span>Timing</span><h2>Fecha</h2><p>Una fecha objetivo ayuda a priorizar: version esencial para publicar, version completa o mejoras por fases.</p></article>
+            </div>
+        </section>
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+    <a href="https://wa.me/573005999843?text=Hola%20FoxDev%2C%20quiero%20cotizar%20un%20proyecto." class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chatear por WhatsApp" title="WhatsApp" id="waFloat"><span class="wa-ping" aria-hidden="true"></span><span class="wa-tooltip" role="tooltip">Escribenos en WhatsApp</span><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    <footer class="ft" id="footer"><div class="ft-wrap"><div class="ft-top"><div class="ft-brand"><div class="ft-logo ft-logo-foxdev"><img src="assets/img/logoFox.png" alt="FOXDEV Logo" draggable="false"></div><p class="ft-desc">Frontend developer focused on clean UI, micro-interactions, and performant web experiences.</p><div class="ft-social SocialLinks" aria-label="Social links"><a class="ft-ic SocialLinks-item" href="https://www.instagram.com/foxdeveloper_?igsh=M21qdjg2MnJ4czg1&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="https://www.linkedin.com/in/sebastian-fox-644816232" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="https://github.com/sebastianFox05" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a><a class="ft-ic SocialLinks-item" href="mailto:Sebasfox0510@gmail.com" aria-label="Correo" title="Correo"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a></div></div><div class="ft-col"><h4 class="ft-title">Navigate</h4><ul class="ft-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Portfolio</a></li><li><a href="services.html">Services</a></li><li><a href="collabs.html">Collabs</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="ft-col"><h4 class="ft-title">Contact</h4><ul class="ft-links"><li><a href="mailto:Sebasfox0510@gmail.com">Sebasfox0510@gmail.com</a></li><li><a href="https://wa.me/573005999843" target="_blank" rel="noopener noreferrer">WhatsApp</a></li><li><a href="contact.html">Send a message</a></li></ul></div></div><div class="ft-bottom"><span class="ft-copy">&copy; <span id="ftYear"></span> FoxDev. All rights reserved.</span><a class="ft-toplink" href="#top" aria-label="Back to top">Back to top <i class="fa-solid fa-arrow-up"></i></a></div></div></footer>
+</body>
+</html>
