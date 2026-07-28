@@ -25,6 +25,8 @@ Cada agente planifica, ejecuta y registra sus cambios con estado, hora, archivos
 | completado | 2026-07-27 21:48 | review | Revisar las seis paginas en ES/EN, persistencia entre rutas, convivencia con tema claro/oscuro, SUIT CSS y errores de JavaScript. | todos |
 | completado | 2026-07-27 22:15 | timmy | Sustituir los accesos inferiores de la portada y agregar Instagram, LinkedIn, GitHub y correo a todos los footers. | todos los HTML, `assets/css/main.css` |
 | completado | 2026-07-27 22:15 | review | Verificar URLs, accesibilidad, apertura segura, tema claro/oscuro y responsive de los enlaces sociales. | todos |
+| completado | 2026-07-27 23:05 | timmy | Auditar y corregir el responsive en celulares, tablets, escritorios y pantallas grandes sin cambiar el diseno. | todos los HTML, `assets/css/main.css`, `assets/js/main.js` |
+| completado | 2026-07-27 23:05 | review | Validar las seis paginas en multiples viewports, ambos idiomas y ambos temas. | todos |
 
 ## Pendiente
 
@@ -48,3 +50,14 @@ Cada agente planifica, ejecuta y registra sus cambios con estado, hora, archivos
 - Enlace de correo configurado con `mailto:Sebasfox0510@gmail.com`.
 - Componente compartido `SocialLinks` implementado con nomenclatura SUIT CSS.
 - Validacion automatizada completada sin errores de JavaScript.
+
+## Revision responsive 2026-07-27
+
+- Diseno visual, contenido, colores, componentes y animaciones conservados.
+- Portada corregida para evitar el corte del titulo principal en celulares.
+- Contenedores, imagenes, tarjetas, formularios y paneles reforzados con medidas flexibles.
+- Estimador de servicios y laboratorio de componentes corregidos para telefonos pequenos.
+- Menu horizontal movil actualizado para mantener visible el enlace de la pagina activa.
+- Cache de CSS y JavaScript versionada en las seis paginas para cargar los ajustes actuales.
+- Seis paginas validadas en 320, 390, 768, 1440 y 1920 pixeles.
+- Espanol, ingles, tema oscuro y tema claro verificados sin scroll horizontal ni errores de JavaScript.

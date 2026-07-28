@@ -4211,3 +4211,256 @@ body.light .reactive-surface::before {
         opacity: 0;
     }
 }
+
+/* ===== Responsive hardening: same design, flexible dimensions ===== */
+img,
+svg,
+video,
+canvas {
+    max-width: 100%;
+}
+
+.hero-content,
+.page-hero-copy,
+.page-hero-media,
+.service-estimator,
+.about-content,
+.about-image,
+.ct-left,
+.ct-right,
+.info-card,
+.case-card,
+.metric-card,
+.focus-board,
+.collab-panel,
+.isec-card,
+.flow-card,
+.sb-card {
+    min-width: 0;
+}
+
+@media (max-width: 980px) {
+    .page-hero {
+        grid-template-columns: minmax(0, 1fr);
+        padding-block: clamp(4.5rem, 10vw, 6rem);
+    }
+
+    .page-hero-media img {
+        min-height: clamp(18rem, 55vw, 26.25rem);
+    }
+
+    .isec-actions,
+    .flow-actions,
+    .sb-actions {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 760px) {
+    :root {
+        --heroPadX: clamp(1rem, 5vw, 1.375rem);
+    }
+
+    .topbar {
+        padding: .625rem var(--heroPadX);
+    }
+
+    .nav-pill {
+        height: auto;
+        min-height: 3.375rem;
+        gap: .5rem;
+        padding: .5rem .625rem;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+        padding: 0 .25rem;
+    }
+
+    .logo-img {
+        height: 4.75rem;
+    }
+
+    .nav {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .hero {
+        min-height: calc(100svh - 4.625rem);
+        padding-block: 1.5rem 5.5rem;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding-top: 2rem;
+    }
+
+    .headline {
+        max-width: 100%;
+        font-size: clamp(2.15rem, 10.5vw, 4.75rem);
+        line-height: .9;
+        letter-spacing: .01em;
+    }
+
+    .kicker {
+        max-width: 100%;
+        font-size: .625rem;
+        letter-spacing: .28em;
+        line-height: 1.6;
+    }
+
+    .subline {
+        max-width: 100%;
+        font-size: .625rem;
+        letter-spacing: .16em;
+        line-height: 1.6;
+    }
+
+    .btn {
+        min-height: 2.75rem;
+        height: auto;
+        padding-block: .625rem;
+    }
+
+    .section,
+    .about-section,
+    .pf2-section,
+    .ct-section,
+    .isec,
+    .flow,
+    .sb {
+        padding-block: clamp(4rem, 14vw, 5.5rem);
+    }
+
+    .page-hero {
+        min-height: auto;
+        gap: 2rem;
+        padding-block: 4.5rem 4rem;
+    }
+
+    .page-title {
+        max-width: 100%;
+        font-size: clamp(2rem, 9.8vw, 3.75rem);
+        overflow-wrap: anywhere;
+    }
+
+    .page-lead {
+        line-height: 1.65;
+    }
+
+    .portfolio-panel,
+    .project-lab {
+        padding-block: clamp(3.5rem, 12vw, 5rem);
+    }
+
+    .portfolio-panel {
+        margin-bottom: 3rem;
+    }
+
+    .info-grid,
+    .case-grid,
+    .metrics-strip {
+        padding-bottom: 4rem;
+    }
+
+    .service-estimator,
+    .info-card,
+    .case-card,
+    .metric-card,
+    .collab-panel,
+    .ct-left,
+    .ct-right,
+    .isec-card,
+    .flow-card,
+    .sb-card {
+        padding: 1.125rem;
+    }
+
+    .panel-head,
+    .isec-head,
+    .flow-head,
+    .sb-head {
+        gap: 1rem;
+    }
+
+    .flow-item,
+    .flow-stat {
+        gap: .75rem;
+        flex-wrap: wrap;
+    }
+
+    .sb-row {
+        grid-template-columns: minmax(3.5rem, .7fr) minmax(4.5rem, 1fr) 2.75rem;
+        gap: .5rem;
+    }
+
+    .ft-top {
+        padding: 1.125rem;
+    }
+}
+
+@media (max-width: 420px) {
+    :root {
+        --heroPadX: .875rem;
+    }
+
+    .topbar {
+        padding-block: .5rem;
+    }
+
+    .nav-pill {
+        gap: .375rem;
+        padding-inline: .5rem;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .logo-img {
+        height: 4rem;
+    }
+
+    .nav-link {
+        padding: .625rem .375rem;
+        font-size: .625rem;
+    }
+
+    .headline {
+        font-size: clamp(2rem, 10.25vw, 2.75rem);
+    }
+
+    .cta-row {
+        gap: .625rem;
+    }
+
+    .cta-row .btn {
+        flex: 1 1 8rem;
+    }
+
+    .bottom-left,
+    .SocialLinks--compact {
+        gap: .625rem;
+    }
+
+    .page-title {
+        font-size: clamp(1.85rem, 9.4vw, 2.5rem);
+    }
+
+    .panel-title,
+    .isec-title,
+    .flow-title,
+    .sb-title {
+        overflow-wrap: anywhere;
+    }
+
+    .estimate-result,
+    .flow-map-top,
+    .flow-card-top,
+    .sb-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

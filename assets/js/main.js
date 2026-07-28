@@ -22,7 +22,7 @@ function moveUnderlineTo(link) {
     if (!link || !nav || !underline) return;
     const navRect = nav.getBoundingClientRect();
     const rect = link.getBoundingClientRect();
-    const left = rect.left - navRect.left;
+    const left = rect.left - navRect.left + nav.scrollLeft;
     underline.style.width = `${rect.width}px`;
     underline.style.transform = `translateX(${left}px)`;
     underline.style.opacity = "0.85";
@@ -32,6 +32,12 @@ function setActiveLink(targetLink) {
     if (!targetLink) return;
     links.forEach(a => a.classList.remove("is-active"));
     targetLink.classList.add("is-active");
+
+    if (nav && nav.scrollWidth > nav.clientWidth) {
+        const centeredLeft = targetLink.offsetLeft - ((nav.clientWidth - targetLink.offsetWidth) / 2);
+        nav.scrollLeft = Math.max(0, centeredLeft);
+    }
+
     moveUnderlineTo(targetLink);
 }
 
