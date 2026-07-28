@@ -961,11 +961,11 @@ document.querySelectorAll(".faq-item").forEach(item => {
     }
 
     function moodFromScore(score) {
-        if (score < 20) return "Calm";
-        if (score < 45) return "Exploring";
-        if (score < 70) return "Engaged";
-        if (score < 90) return "Focused";
-        return "Power user";
+        if (score < 20) return localizeText("Calm");
+        if (score < 45) return localizeText("Exploring");
+        if (score < 70) return localizeText("Engaged");
+        if (score < 90) return localizeText("Focused");
+        return localizeText("Power user");
     }
 
     function setDelta(elm, text) {
@@ -991,17 +991,23 @@ document.querySelectorAll(".faq-item").forEach(item => {
 
         timeEl.textContent = formatTime(state.activeSeconds);
 
-        if (focusEl) focusEl.textContent = state.focused ? "active" : "idle";
+        if (focusEl) {
+            focusEl.textContent = state.paused
+                ? localizeText("paused")
+                : localizeText(state.focused ? "active" : "idle");
+        }
 
         if (modalsEl) modalsEl.textContent = String(state.modals);
         if (themesEl) themesEl.textContent = String(state.themes);
 
         // Hint changes based on behavior
         const idleFor = Date.now() - state.lastInteractTs;
-        if (idleFor > 6000 && hintEl) {
-            hintEl.textContent = "Tip: try opening a project modal or toggle the theme.";
+        if (state.paused && hintEl) {
+            hintEl.textContent = localizeText("Paused. Press Resume to continue.");
+        } else if (idleFor > 6000 && hintEl) {
+            hintEl.textContent = localizeText("Tip: open a card or toggle the theme.");
         } else if (hintEl) {
-            hintEl.textContent = "This panel updates in real time based on how you interact.";
+            hintEl.textContent = localizeText("This panel updates in real time based on how you interact.");
         }
     }
 
@@ -1064,25 +1070,6 @@ document.querySelectorAll(".faq-item").forEach(item => {
         render();
     });
 
-    // Modals opened: detect when a modal becomes open (works with your .pf2-modal.open)
-    const modalObserver = new MutationObserver(() => {
-        if (state.paused) return;
-
-        const openNow = document.querySelectorAll(".pf2-modal.open").length;
-        // Count only increments on transition to open
-        if (openNow > state.modals) {
-            state.modals = openNow; // show current open count
-            // But also increment "opened" metric:
-            // Use a separate accumulator for opens
-        }
-    });
-
-    // We will also increment when any element with class ".pf2-modal" gets "open"
-    const body = document.body;
-    if (body) {
-        modalObserver.observe(body, { attributes: true, subtree: true, attributeFilter: ["class"] });
-    }
-
     // Theme toggles: detect body class changes (assumes your theme uses body.light)
     let lastTheme = document.body.classList.contains("light") ? "light" : "dark";
     const themeObserver = new MutationObserver(() => {
@@ -1097,19 +1084,19 @@ document.querySelectorAll(".faq-item").forEach(item => {
     });
     themeObserver.observe(document.body, { attributes: true, attributeFilter: ["class"] });
 
-    // Precise modal open count (opened events):
-    // Hook into clicks on elements that open modals: button "View Project" or center card
+    // Count meaningful card openings available on the current page.
     document.addEventListener("click", (e) => {
         const t = e.target;
         if (!t || !t.closest) return;
-        const isModalTrigger =
+        const isCardTrigger =
             t.closest("#pf2View") ||
             t.closest("#pf2CurCard") ||
             t.closest("[data-open-modal]") ||
-            t.closest(".pf2-slot.is-center");
+            t.closest(".pf2-slot.is-center") ||
+            t.closest(".collab-tab") ||
+            t.closest(".faq-item");
 
-        if (isModalTrigger && !state.paused) {
-            // increment opened counter
+        if (isCardTrigger && !state.paused) {
             state.modals += 1;
             state.lastInteractTs = Date.now();
             render();
@@ -1128,8 +1115,8 @@ document.querySelectorAll(".faq-item").forEach(item => {
     resetBtn?.addEventListener("click", () => {
         state.clicks = 0;
         state.clicksBurst = 0;
-        state.scrollDepth = 0;
-        state.lastScrollDepth = 0;
+        state.scrollDepth = computeScrollDepth();
+        state.lastScrollDepth = state.scrollDepth;
         state.activeSeconds = 0;
         state.modals = 0;
         state.themes = 0;
@@ -1143,23 +1130,18 @@ document.querySelectorAll(".faq-item").forEach(item => {
 
     pauseBtn?.addEventListener("click", () => {
         state.paused = !state.paused;
-        pauseBtn.textContent = state.paused ? "Resume" : "Pause";
-        setNote(state.paused ? "Paused." : "");
+        pauseBtn.textContent = localizeText(state.paused ? "Resume" : "Pause");
+        state.lastInteractTs = Date.now();
         render();
     });
-
-    function setNote(txt) {
-        if (!hintEl) return;
-        if (!txt) return;
-        hintEl.textContent = txt;
-    }
 
     // Global listeners
     document.addEventListener("click", onClick, true);
     window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("foxlanguagechange", render);
 
     // Init
-    render();
+    onScroll();
 })();
 
 

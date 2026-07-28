@@ -27,6 +27,8 @@ Cada agente planifica, ejecuta y registra sus cambios con estado, hora, archivos
 | completado | 2026-07-27 22:15 | review | Verificar URLs, accesibilidad, apertura segura, tema claro/oscuro y responsive de los enlaces sociales. | todos |
 | completado | 2026-07-27 23:05 | timmy | Auditar y corregir el responsive en celulares, tablets, escritorios y pantallas grandes sin cambiar el diseno. | todos los HTML, `assets/css/main.css`, `assets/js/main.js` |
 | completado | 2026-07-27 23:05 | review | Validar las seis paginas en multiples viewports, ambos idiomas y ambos temas. | todos |
+| completado | 2026-07-27 23:35 | javascript | Corregir la revelacion de Proyectos en movil y reparar las metricas, pausa, reinicio y traduccion de Analitica en vivo. | `projects.html`, `collabs.html`, `assets/js/main.js`, `assets/js/i18n.js` |
+| completado | 2026-07-27 23:35 | review | Validar Proyectos a 320/390 px y probar clics, tarjetas, tema, tiempo, pausa, reinicio e idioma de Analitica en vivo. | `projects.html`, `collabs.html` |
 
 ## Pendiente
 
@@ -61,3 +63,11 @@ Cada agente planifica, ejecuta y registra sus cambios con estado, hora, archivos
 - Cache de CSS y JavaScript versionada en las seis paginas para cargar los ajustes actuales.
 - Seis paginas validadas en 320, 390, 768, 1440 y 1920 pixeles.
 - Espanol, ingles, tema oscuro y tema claro verificados sin scroll horizontal ni errores de JavaScript.
+
+## Correcciones moviles y analitica 2026-07-27
+
+- La seccion Proyectos ya no depende de revelar el contenedor completo; sus animaciones internas se conservan.
+- Analitica en vivo registra clics, aperturas de tarjetas disponibles en la pagina y cambios de tema.
+- Pausa y reanudacion mantienen el temporizador estable y muestran un estado claro.
+- El reinicio conserva la profundidad real de scroll para evitar saltos falsos en la siguiente interaccion.
+- Estados y mensajes dinamicos verificados en espanol e ingles.
